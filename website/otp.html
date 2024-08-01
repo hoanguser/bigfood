@@ -1,0 +1,369 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Demo slide 1</title>
+   <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/style.css">
+ </head>
+
+ <body>
+   <section class="wrapper">
+     <div class="container">
+       <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3 mt-4 text-center">
+           <form class="rounded bg-white shadow p-4">
+             <div class="logo">
+               <img decoding="async" src="images/logo.webp" class="img-fluid" alt="logo">
+             </div>
+           <h3 class="text-dark fw-bolder fs-4 mb-2 mt-2">Xác minh hai bước</h3>
+
+           <div class="fw-normal text-muted mb-4">
+             Nhập mã xác minh chúng tôi đã gửi tới
+           </div>
+
+           <div class="d-flex align-items-center justify-content-center fw-bold mb-4">
+             <i class="fa-solid fa-asterisk"></i>
+             <i class="fa-solid fa-asterisk"></i>
+             <i class="fa-solid fa-asterisk"></i>
+             <i class="fa-solid fa-asterisk"></i>
+             <i class="fa-solid fa-asterisk"></i>
+             <span>2k4@gmail.com</span>
+           </div>
+
+           <div class="otp_input text-start mb-2">
+             <label for="digit">Nhập mã 6 số đã gửi đến email của bạn</label>
+             <div class="d-flex align-items-center justify-content-between mt-2">
+               <input type="text" class="form-control" placeholder="">
+               <input type="text" class="form-control" placeholder="">
+               <input type="text" class="form-control" placeholder="">
+               <input type="text" class="form-control" placeholder="">
+               <input type="text" class="form-control" placeholder="">
+               <input type="text" class="form-control" placeholder="">
+             </div>
+           </div>
+
+           <button type="submit" class="btn btn-primary submit_btn my-4">Xác nhận</button>
+
+           <div class="fw-normal text-muted mb-2">
+             Bạn không nhận được mã? <a href="#" class="text-primary fw-bold text-decoration-none">Gửi lại</a>
+           </div>
+         </form>
+       </div>
+     </div>
+   </section>
+   <script src="https://kit.fontawesome.com/c44613d061.js" crossorigin="anonymous"></script>
+   <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+ </body>
+
+ </html>
+ <style>
+   .ul-list {
+     display: flex;
+     gap: 20px;
+     color: #c69c6d;
+     padding: 18px;
+   }
+
+   .btn-group>.dropdown-toggle::after {
+     display: inline-block;
+     margin-left: 5.5em;
+     vertical-align: 0.255em;
+     content: "";
+     border-top: 0.3em solid;
+     border-right: 0.3em solid transparent;
+     border-bottom: 0;
+     border-left: 0.3em solid transparent;
+   }
+
+   .btn-insert {
+     background-color: #00000000;
+     padding: 5px 10px;
+     border: 1px solid #603913;
+     color: #000;
+     font-size: 13px;
+   }
+
+   .btn-group:hover .btn-insert {
+     background-color: #C69C6B;
+     color: #fff;
+     transition: ease 0.5s;
+
+   }
+
+   .card-title-sp {
+     font-size: 14px;
+   }
+
+   .center-row {
+     align-items: center;
+   }
+
+   .col-4>img {
+     width: 100%;
+   }
+
+   footer {
+     background-color: #f8f1e4;
+   }
+
+   .title-menu {
+     margin: 0;
+     line-height: normal;
+     letter-spacing: 0.5px;
+     font-weight: 400;
+     margin-bottom: 20px;
+     padding-top: 10px;
+     font-size: 14px;
+     color: #603913;
+     position: relative;
+   }
+
+   .li_menu {
+     list-style: none;
+     margin-bottom: 0px;
+     font-size: 14px;
+     line-height: 28px;
+   }
+
+   #mail {
+     padding: 0 50px 0 20px;
+     width: 100%;
+     display: block;
+     margin-bottom: 10px;
+     color: #c69c6d;
+     font-weight: 300;
+     border: 1px solid #fff;
+     background: #fff;
+   }
+
+   #subscribe {
+     cursor: pointer;
+     position: absolute;
+     bottom: 11px;
+     padding: 8px 20px;
+     right: 0;
+     background: #fff;
+     color: #333;
+     border: 0;
+     outline: 0;
+   }
+
+   .content-main {
+     background-image: url(images/sub-banner-top.webp);
+     background-size: cover;
+     padding: 90px 0px;
+     background-repeat: no-repeat;
+     width: 100%;
+     float: left;
+     position: relative;
+   }
+
+   .title_full {
+     width: 100%;
+     float: left;
+     position: relative;
+   }
+
+   .title_full .title_page {
+     color: #fff;
+     margin: 0;
+     text-transform: unset;
+     text-align: center;
+     font-size: 60px;
+     line-height: normal;
+     font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
+     font-weight: 400;
+   }
+
+   .aside-title {
+     position: relative;
+     background-image: url(images/bg-title.webp);
+     margin-bottom: 30px;
+   }
+
+   .aside-title h2 {
+     width: 100%;
+     font-family: "Roboto Slab", "HelveticaNeue", "Helvetica Neue", sans-serif;
+     margin: 0;
+     text-transform: none;
+     font-weight: 4;
+     display: inline-block;
+     padding: 0px 20px;
+     position: relative;
+     color: #c69c6d;
+     font-size: 14px;
+     line-height: 40px;
+     text-transform: uppercase;
+   }
+
+   .aside-title h2 span {
+     color: #fff;
+   }
+
+   #dropdownMenu2 {
+     display: none;
+   }
+
+   .tru {
+     display: none;
+   }
+
+   .cong,
+   .tru {
+     font-weight: 600;
+     font-size: 20px;
+   }
+
+   .nav_pagi .pagination .page-item.active .page-link {
+     background-color: #c69c6d;
+     border-color: #c69c6d;
+     color: #fff;
+     display: block;
+   }
+
+   .nav_pagi .pagination .page-link {
+     float: left;
+     margin: 0 2.5px;
+     border-radius: 0;
+     width: 40px;
+     background: #fff;
+     text-align: center;
+     height: 40px;
+     font-size: 14px;
+     padding: 0;
+     line-height: 40px;
+     color: #c69c6d;
+     border: solid 1px #c69c6d;
+     text-decoration: none;
+   }
+
+   .nav_pagi .pagination .page-link:hover {
+     background-color: #c69c6d;
+     border-color: #c69c6d;
+     color: #fff;
+   }
+ </style>
+ <style>
+   .dong {
+     display: none;
+   }
+
+   .dong1 {
+     display: none;
+   }
+
+   .title-head-contact {
+     color: #c69c6d;
+     font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
+     position: relative;
+     display: block;
+     margin: 0;
+     padding-bottom: 0;
+     text-transform: uppercase;
+     font-size: 1.5em;
+     margin-bottom: 0;
+     font-weight: 700;
+   }
+
+   .page_cotact .text_des {
+     width: 100%;
+     float: left;
+     font-size: 14px;
+     margin: 20px 0;
+     color: #252525;
+   }
+
+   .contact-right .content-contact {
+     display: block;
+     font-size: 14px;
+     margin-bottom: 10px;
+     width: 100%;
+     float: left;
+   }
+
+   .contact-right .content-contact a,
+   .contact-right .content-contact span {
+     width: calc(100% - 28px);
+     padding-left: 10px;
+     float: left;
+     line-height: 28px;
+   }
+
+   .content-contact a {
+     color: #603913;
+     text-decoration: none;
+     background: transparent;
+
+   }
+
+   .contact-right .content-contact span {
+     width: calc(100% - 28px);
+     padding-left: 10px;
+     float: left;
+     line-height: 28px;
+   }
+
+   .content-contact i {
+     float: left;
+     border: 1px solid #c69c6d;
+     text-align: center;
+     color: #c69c6d;
+     font-size: 13px;
+     border-radius: 50%;
+     width: 28px;
+     height: 28px;
+     line-height: 28px;
+   }
+
+   .btn-lienhe {
+     padding: 5px 25px;
+     background: #c69c6d;
+     color: #fff;
+     border-radius: 0;
+     font-size: 14px;
+     font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
+     border: 1px solid transparent;
+   }
+ </style>
+ <script>
+   const dropdownMenu2 = document.getElementById("menumo");
+   const dropdownMenu = document.getElementById("menumo2");
+   const mo = document.querySelector(".mo");
+   const dong = document.querySelector(".dong");
+   const mo1 = document.querySelector(".mo1");
+   const dong1 = document.querySelector(".dong1");
+
+
+   console.log(dropdownMenu2);
+
+   function btmo() {
+     dropdownMenu2.style.display = "block";
+     dropdownMenu.style.display = "block";
+     dong.style.display = "block";
+     mo.style.display = "none";
+   }
+
+   function btdong() {
+     dropdownMenu2.style.display = "none";
+     dropdownMenu.style.display = "block";
+     dong.style.display = "none";
+     mo.style.display = "block";
+   }
+
+   function btmo2() {
+     dropdownMenu.style.display = "block";
+     dong1.style.display = "block";
+     mo1.style.display = "none";
+   }
+
+   function btdong2() {
+     dropdownMenu.style.display = "none";
+     dong1.style.display = "none";
+     mo1.style.display = "block";
+   }
+ </script>

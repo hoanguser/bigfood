@@ -1,0 +1,294 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "PIZZA NHÂN BÒ PHÔ MAI",
+      "giamgia": 0,
+      "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/053/643/products/1.jpg?v=1454064638327",
+      "image1": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/1.jpg?v=1454064638327",
+      "image2": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/119-a3e0cd89-5e1f-4f64-89ae-0d7b657e1f31.jpg?v=1454064638327",
+      "price": "340000",
+      "quantity": 100,
+      "describe": "Nguồn nguyên liệu tươi ngon được nhập chính ngạch hằng ngày đã qua kiểm định an toàn thực phẩm nên khách hàng có thể hoàn toàn yên tâm về độ tươi ngon của những chiếc bánh nơi đây.Bột mỳ trắng mịn cùng với phương pháp nhào bột thủ công để làm nên những chiếc đế bánh khi nướng thì nở xốp và giòn mà không hề chai cứng. Một sự kết hợp hoàn hảo giữa đế bánh và nhân bánh, Chiếc bánh bạn nhận được sẽ vẫn còn nóng hổi, viền bánh hơi cháy cạnh rất thơm và giòn tan khi đưa vào miệng. Nhân bánh đặc sánh phô mai với sốt cà chua đỏ tươi và nhiều bột xen lẫn các lát thịt, hải sản tươi thơm ngon làm nên chiếc pizza hoàn hảo và đúng phong vị nhất.",
+      "describe2": "Thời gian nướng và nhiệt độ nướng bánh: Thời gian nướng rất quan trọng. Chiếc pizza mang tới tận nhà cho khách cũng rất nóng hổi chứ không hề nguội. Nếu pizza để nguội thì vị thực sự của nó sẽ biến mất. Thời gian để nướng chiếc pizza rất quan trọng. Nếu không căn được thời gian nướng thì chiếc bánh có thể bị cháy, hoặc có thể đế bánh không thể giòn và cũng có thể là đế bánh chín không đều. Vậy nên nền nhiệt và thời gian rất quan trọng để quyết định cho ra một chiếc pizza đế bánh giòn rụm khi đưa vào miệng và phần nhân bánh vẫn không bị cháy. Nhiệt độ nướng tại cửa hàng pizza luôn đạt tại 250-350 độ C với thời gian 1-2 phút. Nếu tự làm ở nhà thì nướng mất khoảng 7-8 phút trong nền nhiệt 250 độ C."
+    },
+    {
+      "id": "2",
+      "name": "BÁNH TORRIJA",
+      "giamgia": 0,
+      "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/053/643/products/3.jpg?v=1454127534427",
+      "image1": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/34819f29d84774c6d850d31003a12f.png?v=1454127534427",
+      "image2": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/radiant-red-velvet-cupcake.jpg?v=1454127534427",
+      "price": "50000",
+      "quantity": 100,
+      "describe": "Bánh cupcake dễ thương đã trở thành một hiện tượng trong giới trẻ Việt hiện nay. Những chiếc bánh cupcake ngon miệng và vô cùng đẹp mắt đã làm bao trái tim yêu ẩm thực rung động. Cupcake có rất nhiều vị phù hợp với mọi lứa tuổi: bánh cupcake socola, bánh cupcake dâu tây sữa chua, bánh cupcake trà xanh… Ta có thể mua cupcake ở bất kì cửa hàng bánh nào. Hay bây giờ có rất nhiều người tự tay làm cupcake tại nhà để làm bánh sinh nhật tặng người thân và bạn bè. Tuy nhiên có những điều thú vị về cupcake mà không phải ai cũng biết. Hãy cùng nhau tìm hiểu nhé!",
+      "describe2": "Đã nhiều lần thưởng thức những chiếc bánh cupcake ngon miệng, dễ thương, liệu bạn đã bao giờ tự hỏi nguồn gốc cupcake là ở đâu? Tên gọi bánh cupcake là gì?Cupcake đã được 200 tuổi rồi đó. Cupcake xuất hiện đầu tiên tại Mỹ vào thế kỷ 19 và nhanh chóng tạo thành một bước đột phá và phổ biến trong các gian bếp. Theo trang Food Timeline, người ta vẫn chưa tìm ra nguồn gốc thật sự của tên gọi cupcake. Họ có 2 lý giải cho tên gọi như sau: 1 là chiếc bánh truyền thông được nướng trong những chiếc cup nhỏ,2 là những thành phần nguyên liệu của bánh được đong theo cup."
+    },
+    {
+      "id": "3",
+      "name": "Bánh mứt kem dừa",
+      "giamgia": 0,
+      "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/053/643/products/12.jpg?v=1454127571910",
+      "image1": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/2.jpg?v=1454127571910",
+      "image2": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/10.jpg?v=1454127571910",
+      "price": "60000",
+      "quantity": 150,
+      "describe": "Điểm qua một số mẫu bánh gato sinh nhật dễ thương làm quà tặng độc đáo cho bé cùng GATO nào.Loại bánh gato sinh nhật này ngoài làm quà sinh nhật cho bé, bạn có thể đặt những chiếc birthday cake dễ thương này làm quà sinh nhật cho cả những người “chưa muốn lớn” nữa :) Bánh sinh nhật loại này không chỉ đẹp mà ăn còn rất ngon!Quà sinh nhật cho gia đình – ngoài birthday cake – còn có hoa sinh nhật rất phổ biến. Bạn nghĩ sao nếu kết hợp 2 món quà tặng sinh nhật đó",
+      "describe2": "Happy birthday cake cổ điển – chocolate cake phủ hoa và trang trí đơn giản với tên người nhận – món quà sinh nhật cho anh traiĐĩa xôi nóng hổi, thơm nức mùi dứa, nước dừa và đậu xanh cùng những hạt nếp dẻo hòa lẫn vị ngọt của xoài chín mang đến một bữa sáng thật ấm áp.Vào dịp đầy tháng, hoặc sinh nhật bé, một chiếc bánh gato sinh nhật ngộ nghĩnh được trang trí theo phong cách dễ thương sẽ là món quà sinh nhật độc đáo nhất! Vì mỗi chiếc bánh sinh nhật mẫu này đều được đặt làm, hoặc được làm sẵn với số lượng rất ít nên bạn khỏi lo chiếc birthday cake mình đem tặng sẽ bị “đụng hàng” 😛"
+    },
+    {
+      "id": "4",
+      "name": "Bánh mứt kem dừa",
+      "giamgia": 0,
+      "image": "images/pr4.png",
+      "image1": "images/pr1.png",
+      "image2": "images/pr1.png",
+      "price": "60000",
+      "quantity": 1,
+      "describe": "Nguồn nguyên liệu tươi ngon được nhập chính ngạch hằng ngày đã qua kiểm định an toànthực phẩm nên khách hàng có thể hoàn toàn yên tâm về độ tươi ngon của những chiếc bánh nơi đây.<br>Bột mỳ trắng mịn cùng với phương pháp nhào bột thủ công để làm nên những chiếc đế bánh khi nướng thì nở xốp và giòn mà không hề chai cứng. Một sự kết hợp hoàn hảo giữa đế bánh và nhân bánh, Chiếc bánh bạn nhận được sẽ vẫn còn nóng hổi, viền bánh hơi cháy cạnh rất thơm và giòn tan khi đưa vào miệng. Nhân bánh đặc sánh phô mai với sốt cà chua đỏ tươi và nhiều bột xen lẫn các lát thịt, hải sản tươi thơm ngon làm nên chiếc pizza hoàn hảo và đúng phong vị nhất.",
+      "describe2": "Thời gian nướng và nhiệt độ nướng bánh: Thời gian nướng rất quan trọng. Chiếc pizza mang tới tận nhà cho khách cũng rất nóng hổi chứ không hề nguội. Nếu pizza để nguội thì vị thực sự của nó sẽ biến mất. Thời gian để nướng chiếc pizza rất quan trọng. Nếu không căn được thời gian nướng thì chiếc bánh có thể bị cháy, hoặc có thể đế bánh không thể giòn và cũng có thể là đế bánh chín không đều. Vậy nên nền nhiệt và thời gian rất quan trọng để quyết định cho ra một chiếc pizza đế bánh giòn rụm khi đưa vào miệng và phần nhân bánh vẫn không bị cháy. Nhiệt độ nướng tại cửa hàng pizza luôn đạt tại 250-350 độ C với thời gian 1-2 phút. Nếu tự làm ở nhà thì nướng mất khoảng 7-8 phút trong nền nhiệt 250 độ C."
+    },
+    {
+      "id": "5",
+      "name": "Bánh mứt kem dừa",
+      "giamgia": 0,
+      "image": "images/pr5.png",
+      "image1": "images/pr1.png",
+      "image2": "images/pr1.png",
+      "price": "60000",
+      "quantity": 1,
+      "describe": "Nguồn nguyên liệu tươi ngon được nhập chính ngạch hằng ngày đã qua kiểm định an toànthực phẩm nên khách hàng có thể hoàn toàn yên tâm về độ tươi ngon của những chiếc bánh nơi đây.<br>Bột mỳ trắng mịn cùng với phương pháp nhào bột thủ công để làm nên những chiếc đế bánh khi nướng thì nở xốp và giòn mà không hề chai cứng. Một sự kết hợp hoàn hảo giữa đế bánh và nhân bánh, Chiếc bánh bạn nhận được sẽ vẫn còn nóng hổi, viền bánh hơi cháy cạnh rất thơm và giòn tan khi đưa vào miệng. Nhân bánh đặc sánh phô mai với sốt cà chua đỏ tươi và nhiều bột xen lẫn các lát thịt, hải sản tươi thơm ngon làm nên chiếc pizza hoàn hảo và đúng phong vị nhất.",
+      "describe2": "Thời gian nướng và nhiệt độ nướng bánh: Thời gian nướng rất quan trọng. Chiếc pizza mang tới tận nhà cho khách cũng rất nóng hổi chứ không hề nguội. Nếu pizza để nguội thì vị thực sự của nó sẽ biến mất. Thời gian để nướng chiếc pizza rất quan trọng. Nếu không căn được thời gian nướng thì chiếc bánh có thể bị cháy, hoặc có thể đế bánh không thể giòn và cũng có thể là đế bánh chín không đều. Vậy nên nền nhiệt và thời gian rất quan trọng để quyết định cho ra một chiếc pizza đế bánh giòn rụm khi đưa vào miệng và phần nhân bánh vẫn không bị cháy. Nhiệt độ nướng tại cửa hàng pizza luôn đạt tại 250-350 độ C với thời gian 1-2 phút. Nếu tự làm ở nhà thì nướng mất khoảng 7-8 phút trong nền nhiệt 250 độ C."
+    },
+    {
+      "id": "6",
+      "name": "Bánh mứt kem dừa",
+      "giamgia": 0,
+      "image": "images/pr6.png",
+      "image1": "images/pr1.png",
+      "image2": "images/pr1.png",
+      "price": "60000",
+      "quantity": 1,
+      "describe": "Nguồn nguyên liệu tươi ngon được nhập chính ngạch hằng ngày đã qua kiểm định an toànthực phẩm nên khách hàng có thể hoàn toàn yên tâm về độ tươi ngon của những chiếc bánh nơi đây.<br>Bột mỳ trắng mịn cùng với phương pháp nhào bột thủ công để làm nên những chiếc đế bánh khi nướng thì nở xốp và giòn mà không hề chai cứng. Một sự kết hợp hoàn hảo giữa đế bánh và nhân bánh, Chiếc bánh bạn nhận được sẽ vẫn còn nóng hổi, viền bánh hơi cháy cạnh rất thơm và giòn tan khi đưa vào miệng. Nhân bánh đặc sánh phô mai với sốt cà chua đỏ tươi và nhiều bột xen lẫn các lát thịt, hải sản tươi thơm ngon làm nên chiếc pizza hoàn hảo và đúng phong vị nhất.",
+      "describe2": "Thời gian nướng và nhiệt độ nướng bánh: Thời gian nướng rất quan trọng. Chiếc pizza mang tới tận nhà cho khách cũng rất nóng hổi chứ không hề nguội. Nếu pizza để nguội thì vị thực sự của nó sẽ biến mất. Thời gian để nướng chiếc pizza rất quan trọng. Nếu không căn được thời gian nướng thì chiếc bánh có thể bị cháy, hoặc có thể đế bánh không thể giòn và cũng có thể là đế bánh chín không đều. Vậy nên nền nhiệt và thời gian rất quan trọng để quyết định cho ra một chiếc pizza đế bánh giòn rụm khi đưa vào miệng và phần nhân bánh vẫn không bị cháy. Nhiệt độ nướng tại cửa hàng pizza luôn đạt tại 250-350 độ C với thời gian 1-2 phút. Nếu tự làm ở nhà thì nướng mất khoảng 7-8 phút trong nền nhiệt 250 độ C."
+    },
+    {
+      "id": "7",
+      "name": "Bánh mứt kem dừa",
+      "giamgia": 0,
+      "image": "images/pr7.png",
+      "image1": "images/pr1.png",
+      "image2": "images/pr1.png",
+      "price": "60000",
+      "quantity": 1,
+      "describe": "Nguồn nguyên liệu tươi ngon được nhập chính ngạch hằng ngày đã qua kiểm định an toànthực phẩm nên khách hàng có thể hoàn toàn yên tâm về độ tươi ngon của những chiếc bánh nơi đây.<br>Bột mỳ trắng mịn cùng với phương pháp nhào bột thủ công để làm nên những chiếc đế bánh khi nướng thì nở xốp và giòn mà không hề chai cứng. Một sự kết hợp hoàn hảo giữa đế bánh và nhân bánh, Chiếc bánh bạn nhận được sẽ vẫn còn nóng hổi, viền bánh hơi cháy cạnh rất thơm và giòn tan khi đưa vào miệng. Nhân bánh đặc sánh phô mai với sốt cà chua đỏ tươi và nhiều bột xen lẫn các lát thịt, hải sản tươi thơm ngon làm nên chiếc pizza hoàn hảo và đúng phong vị nhất.",
+      "describe2": "Thời gian nướng và nhiệt độ nướng bánh: Thời gian nướng rất quan trọng. Chiếc pizza mang tới tận nhà cho khách cũng rất nóng hổi chứ không hề nguội. Nếu pizza để nguội thì vị thực sự của nó sẽ biến mất. Thời gian để nướng chiếc pizza rất quan trọng. Nếu không căn được thời gian nướng thì chiếc bánh có thể bị cháy, hoặc có thể đế bánh không thể giòn và cũng có thể là đế bánh chín không đều. Vậy nên nền nhiệt và thời gian rất quan trọng để quyết định cho ra một chiếc pizza đế bánh giòn rụm khi đưa vào miệng và phần nhân bánh vẫn không bị cháy. Nhiệt độ nướng tại cửa hàng pizza luôn đạt tại 250-350 độ C với thời gian 1-2 phút. Nếu tự làm ở nhà thì nướng mất khoảng 7-8 phút trong nền nhiệt 250 độ C."
+    },
+    {
+      "id": "1c04",
+      "name": "dfdfds",
+      "price": 434,
+      "giamgia": 3,
+      "describe": "gfdsgfd",
+      "describe2": "fgsdfg"
+    },
+    {
+      "id": "e96f",
+      "name": "gbfdbgf",
+      "price": 6456,
+      "giamgia": 5,
+      "describe": "fdsgsg",
+      "describe2": "ghdgfhgh"
+    },
+    {
+      "id": "6e8d",
+      "name": "nguyễn hoàng111111111",
+      "price": 435,
+      "giamgia": 4,
+      "describe": "fghgfdhgfh",
+      "describe2": "gfhdgfhgfhfg"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "admin",
+      "role": "admin",
+      "image": "https://i.pinimg.com/originals/80/6e/2a/806e2a9b18631b7cd87e2bde9732795c.jpg"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "email": "user@example.com",
+      "password": "user",
+      "role": "user",
+      "image": "https://th.bing.com/th/id/OIP.dLJgbf7meF3AQ7FqG40NiQAAAA?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": "26d7",
+      "username": "hoang",
+      "email": "hoangnvps33350@fpt.edu.vn",
+      "password": "123456789",
+      "role": "user"
+    },
+    {
+      "id": "e6a1",
+      "username": "hoang25102k4",
+      "email": "hoang.25102k4@gmail.com",
+      "password": "1234567",
+      "role": "user"
+    },
+    {
+      "id": "8faa",
+      "username": "Nguyễn Văn Hoàng",
+      "email": "hoang@gmail.com",
+      "password": "123456",
+      "role": "user"
+    },
+    {
+      "id": "0588",
+      "username": "hoang25102k4",
+      "email": "hoang2@gmail.com",
+      "password": "1234",
+      "role": "user"
+    },
+    {
+      "id": "7db9",
+      "username": "1",
+      "email": "111@gmail.com",
+      "password": "1111",
+      "role": "user"
+    },
+    {
+      "id": "789e",
+      "username": "2",
+      "email": "2@gmail.com",
+      "password": "1234",
+      "role": "user"
+    },
+    {
+      "id": "1a45",
+      "username": "Ng_Hoang_2510",
+      "email": "hoang3@gmail.com",
+      "password": "123",
+      "role": "user"
+    },
+    {
+      "id": "ef5f",
+      "username": "cuong",
+      "email": "cuongpn@gmail.com",
+      "password": "123",
+      "role": "user"
+    }
+  ],
+  "oders": [
+    {
+      "id": "f305",
+      "name": "nguyễn hoàng",
+      "phone": "0924109953",
+      "address": "việt nam",
+      "product": [
+        {
+          "id": "1",
+          "name": "PIZZA NHÂN BÒ PHÔ MAI",
+          "giamgia": 0,
+          "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/053/643/products/1.jpg?v=1454064638327",
+          "image1": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/1.jpg?v=1454064638327",
+          "image2": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/119-a3e0cd89-5e1f-4f64-89ae-0d7b657e1f31.jpg?v=1454064638327",
+          "price": "340000",
+          "quantity": 3,
+          "describe": "Nguồn nguyên liệu tươi ngon được nhập chính ngạch hằng ngày đã qua kiểm định an toàn thực phẩm nên khách hàng có thể hoàn toàn yên tâm về độ tươi ngon của những chiếc bánh nơi đây.Bột mỳ trắng mịn cùng với phương pháp nhào bột thủ công để làm nên những chiếc đế bánh khi nướng thì nở xốp và giòn mà không hề chai cứng. Một sự kết hợp hoàn hảo giữa đế bánh và nhân bánh, Chiếc bánh bạn nhận được sẽ vẫn còn nóng hổi, viền bánh hơi cháy cạnh rất thơm và giòn tan khi đưa vào miệng. Nhân bánh đặc sánh phô mai với sốt cà chua đỏ tươi và nhiều bột xen lẫn các lát thịt, hải sản tươi thơm ngon làm nên chiếc pizza hoàn hảo và đúng phong vị nhất.",
+          "describe2": "Thời gian nướng và nhiệt độ nướng bánh: Thời gian nướng rất quan trọng. Chiếc pizza mang tới tận nhà cho khách cũng rất nóng hổi chứ không hề nguội. Nếu pizza để nguội thì vị thực sự của nó sẽ biến mất. Thời gian để nướng chiếc pizza rất quan trọng. Nếu không căn được thời gian nướng thì chiếc bánh có thể bị cháy, hoặc có thể đế bánh không thể giòn và cũng có thể là đế bánh chín không đều. Vậy nên nền nhiệt và thời gian rất quan trọng để quyết định cho ra một chiếc pizza đế bánh giòn rụm khi đưa vào miệng và phần nhân bánh vẫn không bị cháy. Nhiệt độ nướng tại cửa hàng pizza luôn đạt tại 250-350 độ C với thời gian 1-2 phút. Nếu tự làm ở nhà thì nướng mất khoảng 7-8 phút trong nền nhiệt 250 độ C."
+        }
+      ],
+      "idUser": "-1",
+      "total": 1020000,
+      "date": "2024-04-05 23:48:12",
+      "status": "oder"
+    },
+    {
+      "id": "4be8",
+      "name": "nguyễn hoàng",
+      "phone": "0924109953",
+      "address": "việt nam",
+      "product": [
+        {
+          "id": "1",
+          "name": "PIZZA NHÂN BÒ PHÔ MAI",
+          "giamgia": 0,
+          "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/053/643/products/1.jpg?v=1454064638327",
+          "image1": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/1.jpg?v=1454064638327",
+          "image2": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/119-a3e0cd89-5e1f-4f64-89ae-0d7b657e1f31.jpg?v=1454064638327",
+          "price": "340000",
+          "quantity": 3,
+          "describe": "Nguồn nguyên liệu tươi ngon được nhập chính ngạch hằng ngày đã qua kiểm định an toàn thực phẩm nên khách hàng có thể hoàn toàn yên tâm về độ tươi ngon của những chiếc bánh nơi đây.Bột mỳ trắng mịn cùng với phương pháp nhào bột thủ công để làm nên những chiếc đế bánh khi nướng thì nở xốp và giòn mà không hề chai cứng. Một sự kết hợp hoàn hảo giữa đế bánh và nhân bánh, Chiếc bánh bạn nhận được sẽ vẫn còn nóng hổi, viền bánh hơi cháy cạnh rất thơm và giòn tan khi đưa vào miệng. Nhân bánh đặc sánh phô mai với sốt cà chua đỏ tươi và nhiều bột xen lẫn các lát thịt, hải sản tươi thơm ngon làm nên chiếc pizza hoàn hảo và đúng phong vị nhất.",
+          "describe2": "Thời gian nướng và nhiệt độ nướng bánh: Thời gian nướng rất quan trọng. Chiếc pizza mang tới tận nhà cho khách cũng rất nóng hổi chứ không hề nguội. Nếu pizza để nguội thì vị thực sự của nó sẽ biến mất. Thời gian để nướng chiếc pizza rất quan trọng. Nếu không căn được thời gian nướng thì chiếc bánh có thể bị cháy, hoặc có thể đế bánh không thể giòn và cũng có thể là đế bánh chín không đều. Vậy nên nền nhiệt và thời gian rất quan trọng để quyết định cho ra một chiếc pizza đế bánh giòn rụm khi đưa vào miệng và phần nhân bánh vẫn không bị cháy. Nhiệt độ nướng tại cửa hàng pizza luôn đạt tại 250-350 độ C với thời gian 1-2 phút. Nếu tự làm ở nhà thì nướng mất khoảng 7-8 phút trong nền nhiệt 250 độ C."
+        }
+      ],
+      "idUser": "-1",
+      "total": 1020000,
+      "date": "2024-04-05 23:50:13",
+      "status": "oder"
+    },
+    {
+      "id": "44f3",
+      "name": "nguyễn hoàng",
+      "phone": "0924109953",
+      "address": "việt nam",
+      "product": [
+        {
+          "id": "1",
+          "name": "PIZZA NHÂN BÒ PHÔ MAI",
+          "giamgia": 0,
+          "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/053/643/products/1.jpg?v=1454064638327",
+          "image1": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/1.jpg?v=1454064638327",
+          "image2": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/119-a3e0cd89-5e1f-4f64-89ae-0d7b657e1f31.jpg?v=1454064638327",
+          "price": "340000",
+          "quantity": 2,
+          "describe": "Nguồn nguyên liệu tươi ngon được nhập chính ngạch hằng ngày đã qua kiểm định an toàn thực phẩm nên khách hàng có thể hoàn toàn yên tâm về độ tươi ngon của những chiếc bánh nơi đây.Bột mỳ trắng mịn cùng với phương pháp nhào bột thủ công để làm nên những chiếc đế bánh khi nướng thì nở xốp và giòn mà không hề chai cứng. Một sự kết hợp hoàn hảo giữa đế bánh và nhân bánh, Chiếc bánh bạn nhận được sẽ vẫn còn nóng hổi, viền bánh hơi cháy cạnh rất thơm và giòn tan khi đưa vào miệng. Nhân bánh đặc sánh phô mai với sốt cà chua đỏ tươi và nhiều bột xen lẫn các lát thịt, hải sản tươi thơm ngon làm nên chiếc pizza hoàn hảo và đúng phong vị nhất.",
+          "describe2": "Thời gian nướng và nhiệt độ nướng bánh: Thời gian nướng rất quan trọng. Chiếc pizza mang tới tận nhà cho khách cũng rất nóng hổi chứ không hề nguội. Nếu pizza để nguội thì vị thực sự của nó sẽ biến mất. Thời gian để nướng chiếc pizza rất quan trọng. Nếu không căn được thời gian nướng thì chiếc bánh có thể bị cháy, hoặc có thể đế bánh không thể giòn và cũng có thể là đế bánh chín không đều. Vậy nên nền nhiệt và thời gian rất quan trọng để quyết định cho ra một chiếc pizza đế bánh giòn rụm khi đưa vào miệng và phần nhân bánh vẫn không bị cháy. Nhiệt độ nướng tại cửa hàng pizza luôn đạt tại 250-350 độ C với thời gian 1-2 phút. Nếu tự làm ở nhà thì nướng mất khoảng 7-8 phút trong nền nhiệt 250 độ C."
+        }
+      ],
+      "idUser": "-1",
+      "total": 680000,
+      "date": "2024-04-05 23:50:42",
+      "status": "oder"
+    },
+    {
+      "id": "e57d",
+      "name": "nguyễn hoàng",
+      "phone": "0924109953",
+      "address": "việt nam",
+      "product": [
+        {
+          "id": "1",
+          "name": "PIZZA NHÂN BÒ PHÔ MAI",
+          "giamgia": 0,
+          "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/053/643/products/1.jpg?v=1454064638327",
+          "image1": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/1.jpg?v=1454064638327",
+          "image2": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/119-a3e0cd89-5e1f-4f64-89ae-0d7b657e1f31.jpg?v=1454064638327",
+          "price": "340000",
+          "quantity": "1",
+          "describe": "Nguồn nguyên liệu tươi ngon được nhập chính ngạch hằng ngày đã qua kiểm định an toàn thực phẩm nên khách hàng có thể hoàn toàn yên tâm về độ tươi ngon của những chiếc bánh nơi đây.Bột mỳ trắng mịn cùng với phương pháp nhào bột thủ công để làm nên những chiếc đế bánh khi nướng thì nở xốp và giòn mà không hề chai cứng. Một sự kết hợp hoàn hảo giữa đế bánh và nhân bánh, Chiếc bánh bạn nhận được sẽ vẫn còn nóng hổi, viền bánh hơi cháy cạnh rất thơm và giòn tan khi đưa vào miệng. Nhân bánh đặc sánh phô mai với sốt cà chua đỏ tươi và nhiều bột xen lẫn các lát thịt, hải sản tươi thơm ngon làm nên chiếc pizza hoàn hảo và đúng phong vị nhất.",
+          "describe2": "Thời gian nướng và nhiệt độ nướng bánh: Thời gian nướng rất quan trọng. Chiếc pizza mang tới tận nhà cho khách cũng rất nóng hổi chứ không hề nguội. Nếu pizza để nguội thì vị thực sự của nó sẽ biến mất. Thời gian để nướng chiếc pizza rất quan trọng. Nếu không căn được thời gian nướng thì chiếc bánh có thể bị cháy, hoặc có thể đế bánh không thể giòn và cũng có thể là đế bánh chín không đều. Vậy nên nền nhiệt và thời gian rất quan trọng để quyết định cho ra một chiếc pizza đế bánh giòn rụm khi đưa vào miệng và phần nhân bánh vẫn không bị cháy. Nhiệt độ nướng tại cửa hàng pizza luôn đạt tại 250-350 độ C với thời gian 1-2 phút. Nếu tự làm ở nhà thì nướng mất khoảng 7-8 phút trong nền nhiệt 250 độ C."
+        }
+      ],
+      "idUser": "-1",
+      "total": 340000,
+      "date": "2024-04-06 22:17:21",
+      "status": "oder"
+    }
+  ],
+  "upload": [
+    {
+      "image": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/1.jpg?v=1454064638327",
+      "id": "f3ad"
+    },
+    {
+      "image": "https://bizweb.dktcdn.net/thumb/small/100/053/643/products/119-a3e0cd89-5e1f-4f64-89ae-0d7b657e1f31.jpg?v=1454064638327",
+      "id": "600c"
+    }
+  ]
+}

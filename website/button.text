@@ -1,0 +1,2 @@
+cd ../
+chạy: --> npx json-server database.json

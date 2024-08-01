@@ -1,0 +1,90 @@
+<section class="content-main">
+  <div class="title_full">
+    <div class="container a-center">
+      <h1 class="title_page">Đăng nhập tài khoản</h1>
+    </div>
+  </div>
+</section>
+
+<div class="container-fluid container-xxl container-xl container-lg container-md container-sm container mt-5 mb-5">
+  <div class="row p-5">
+    <div class="col-lg-6 left-register">
+      <div class="container-fluid container-xxl container-xl container-lg container-md container-sm container">
+        <form name="loginForm" ng-submit="login()" novalidate>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nhập email của bạn</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ng-model="user.email" name="email" required ng-blur="checkInput('email')" ng-change="checkEmail()">
+            <div id="emailHelp" class="form-text"></div>
+            <div class="text-danger" ng-if="loginForm.email.$error.required 
+            && (loginForm.email.$dirty || inputsTouched.email)">
+              Vui lòng nhập Email
+            </div>
+            <div class="text-danger" ng-if="emailError">
+              Email không tồn tại!
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Nhập mật khẩu</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" ng-model="user.password" 
+            name="password" required ng-blur="checkInput('password')" ng-change="checkPassword()">
+            <div class="text-danger" ng-if="loginForm.password.$error.required 
+            && (loginForm.password.$dirty || inputsTouched.password)">
+              Vui lòng nhập mật khẩu
+            </div>
+            <div class="text-danger" ng-if="passwordError">
+              Mật khẩu không chính xác
+            </div>
+          </div>
+          <div class="mb-3 form-check">
+            <div class="row">
+              <div class="col-6">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Nhớ mật khẩu</label>
+              </div>
+              <div class="col-6">
+                <button type="submit" class="btn btn-primary2 w-100">Đăng nhập</button>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 form-check">
+            <a href="#" class="text-decoration-none">Quên mật khẩu?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-lg-6 right-register">
+      <div class="container text-center">
+        <h3>Đăng nhập tài khoản</h3>
+        <p>Chào mừng đến với chúng tôi</p>
+        <div class="container">
+          <div class="container">
+            <div class="container">
+              <img class="img-fluid" src="images/logo.webp" alt="">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p>--- Hoặc đăng nhập bằng ---</p>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-4">
+            <img class="img-fluid" src="images/fb-btn.svg" alt="">
+          </div>
+          <div class="col-4">
+            <img class="img-fluid" src="images/gp-btn.svg" alt="">
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <hr>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4">Bạn đã chưa có tài khoản?</div>
+            <div class="col-4"><a class="btn btn-primary3" href="">Đăng kí</a></div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

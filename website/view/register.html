@@ -1,0 +1,96 @@
+<section class="content-main">
+  <div class="title_full">
+    <div class="container a-center">
+      <h1 class="title_page">Đăng kí tài khoản</h1>
+    </div>
+  </div>
+</section>
+
+<div class="container-fluid container-xxl container-xl container-lg container-md container-sm container mt-5 mb-5">
+  <div class="row p-5">
+    <div class="col-lg-6 left-register">
+      <div class="container text-center">
+        <h3>Đăng kí tài khoản</h3>
+        <p>Chào mừng đến với chúng tôi</p>
+        <div class="container">
+          <div class="container">
+            <div class="container">
+              <img class="img-fluid" src="images/logo.webp" alt="">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p>--- Hoặc đăng ký bằng ---</p>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-4">
+            <img class="img-fluid" src="images/fb-btn.svg" alt="">
+          </div>
+
+          <div class="col-4">
+            <img class="img-fluid" src="images/gp-btn.svg" alt="">
+
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <hr>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4">Bạn đã có tài khoản?</div>
+            <div class="col-4"><a class="btn btn-primary3" href="">Đăng nhập</a></div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 right-register">
+      <form name="registrationForm" ng-submit="register()" novalidate>
+        <div class="mb-3">
+          <label for="username" class="form-label">Nhập họ và tên</label>
+          <input type="text" class="form-control" id="username" 
+          ng-model="user.username" name="username" required ng-blur="checkInput('username')">
+          <div class="text-danger" ng-if="registrationForm.username.$error.required && 
+          (registrationForm.username.$dirty || inputsTouched.username)">
+            Vui lòng nhập họ và tên
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Nhập email của bạn</label>
+          <input type="email" class="form-control" id="email" ng-model="user.email" ng-change="checkDuplicateEmail()" 
+          name="email" required ng-blur="checkInput('email')">
+          <div class="text-danger" ng-if="registrationForm.email.$error.required && (registrationForm.email.$dirty || inputsTouched.email)">
+            Vui lòng nhập Email
+          </div>
+          <div class="text-danger" ng-if="emailExists">
+            Email đã được sử dụng. Vui lòng chọn một email khác.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Nhập mật khẩu</label>
+          <input type="password" class="form-control" id="password" ng-model="user.password" 
+          name="password" required ng-blur="checkInput('password')">
+          <div class="text-danger" ng-if="registrationForm.password.$error.required && 
+          (registrationForm.password.$dirty || inputsTouched.password)">
+            Vui lòng nhập mật khẩu
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Xác nhận mật khẩu</label>
+          <input type="password" class="form-control" id="confirmPassword" ng-model="user.confirmPassword" required 
+          name="confirmPassword" ng-blur="checkInput('confirmPassword')">
+          <div class="text-danger" ng-if="registrationForm.confirmPassword.$error.required && 
+          (registrationForm.confirmPassword.$dirty || inputsTouched.password)">
+            Vui lòng xác nhận mật khẩu
+          </div>
+          <div class="text-danger" ng-if="user.password !== user.confirmPassword && registrationForm.confirmPassword.$dirty">
+            Mật khẩu xác nhận không khớp
+          </div>
+        </div>
+        <div class="mb-3 form-check text-center">
+          <button type="submit" class="btn btn-primary2 " ng-disabled="registrationForm.$invalid">Đăng ký</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

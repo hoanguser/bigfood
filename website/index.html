@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo slide 1</title>
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/style.css">
+</head>
+
+<body ng-app="myapp" ng-controller="mainCtrl">
+  <div class="container-fluid container-xxl container-xl container-lg container-md container-sm container ">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid container-xxl container-xl container-lg container-md container-sm container p-0">
+        <div class="collapse navbar-collapse shown bs collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll d-flex" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gioi thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sản phẩm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Khuyến mãi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tin tức</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên hệ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tài khoản
+              </a>
+              <ul class="dropdown-menu">
+                <li ng-show="user"><a class="dropdown-item" href="#">
+                    {{ user.username }}</a></li>
+                <li>
+                <li ng-show="user && user.role === 'admin'">
+                  <a class="dropdown-item" href="#!admin">
+                    Quản lý admin
+                  </a>
+                </li>
+                <li>
+                <li ng-show="!user"><a class="dropdown-item" href="#!register">Đăng ký</a></li>
+                <hr class="dropdown-divider">
+                <li ng-show="user"><a class="dropdown-item" href="javascript:void(0)" ng-click="logOut()">Đăng xuất</a></li>
+                <li ng-show="!user"><a class="dropdown-item" href="#!login">Đăng nhập</a></li>
+              </ul>
+            </li>
+          </ul>
+          <p class="p-0 m-0 align-middle">Chào mừng bạn đến với bigFood!</p>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <header>
+    <div class="heading-card collapse">
+      <div class="container-fluid container-xxl container-xl container-lg container-md container-sm container ">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12 logo-main">
+            <div class="logo">
+              <a href="/" class="logo-wrapper ">
+                <img src="//bizweb.dktcdn.net/100/053/643/themes/877493/assets/logo.jpg?1676015641182" alt="logo Big Food">
+              </a>
+
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 hidden-sm hidden-xs">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-3 col-xs-3">
+                <div class="static margin-left-0">
+                  <div class="static-icon">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div class="static-content">
+                    <span class="static-title">Open:</span>
+                    <span class="static-info">8 AM - 10 PM</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-3">
+                <div class="static">
+                  <div class="static-icon align-middle">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="static-content">
+                    <span class="static-title">Email:</span>
+                    <span href="mailto:support@sapo.vn" class="static-info">
+                      support@sapo.vn
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-3">
+                <div class="static">
+                  <div class="static-icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="static-content">
+                    <span class="static-title">Hotline:</span>
+                    <span href="tel:19006750" class="static-info">
+                      19006750
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="header-menu">
+    <div class="container-fluid container-xxl container-xl container-lg container-md container-sm container ">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary hidden-md m-4">
+        <div class="container-fluid container-xxl container-xl container-lg container-md container-sm container ">
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav menu-font me-auto my-2 my-lg-0 navbar-nav-scroll float-xl-start" style="--bs-scroll-height: 100px; margin-left: 0; margin-right: 0;">
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gioi thiệu</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#!product" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sản phẩm
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#!product">Tất cả sản phẩm</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Khuyến mãi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!news">Tin tuc</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!lienhe">Liên he</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <div class="row">
+                <div class="col-6">
+                  <div class="header-col-6">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="body-col-6">
+                      <form action="" method="post">
+                        <div class="body-col-6-input-form">
+                          <input class="body-col-6-input-form-son" type="text" placeholder="Tiếm sản phẩm">
+                        </div>
+                        <div class="body-col-6-icon-form">
+                          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-6">
+                  <a class="text-decoration-none" href="#!cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="card hidden-lg">
+        <div class="card-header">
+          <div class="card-header-content">
+            <div class="row">
+              <div class="col-10">
+                MENU
+              </div>
+              <div class="col-2">
+                <i class="fa-solid fa-bars mo" onclick="btmo()"></i>
+                <i class="fa-solid fa-close dong" onclick="btdong()"></i>
+              </div>
+            </div>
+          </div>
+          <ul class="list-group mt-4" id="menumo">
+            <li class="list-group-item ps-0"> Sản phẩm mới</li>
+            <li class="list-group-item ps-0"> Sản phẩm khuyến mãi</li>
+            <li class="list-group-item ps-0"> Sản phẩm nổi bật</li>
+            <li class="list-group-item ps-0"> Pizza</li>
+            <li class="list-group-item ps-0"> Bánh ngọt</li>
+            <li class="list-group-item ps-0"> Bánh kem</li>
+            <li class="list-group-item ps-0"> Đồ ăn nhẹ</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div role="alert" ng-show="showSuccessMessage" class="alert fade alert-simple alert-success alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show">
+    <i class="start-icon far fa-check-circle faa-tada animated"></i>
+    <strong class="font__weight-semibold">Chúc mừng!</strong> Bạn đã thêm giỏ hàng thành công.
+  </div>
+  <style>
+    .alert>.start-icon {
+      margin-right: 0;
+      min-width: 20px;
+      text-align: center;
+    }
+
+    .alert>.start-icon {
+      margin-right: 5px;
+    }
+
+    .greencross {
+      font-size: 18px;
+      color: #25ff0b;
+      text-shadow: none;
+    }
+
+    .alert-simple.alert-success {
+      border: 1px solid rgba(36, 241, 6, 0.46);
+      background-color: rgba(7, 149, 66, 0.12156862745098039);
+      box-shadow: 0px 0px 2px #259c08;
+      color: #0ad406;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    .alert-success:hover {
+      background-color: rgba(7, 149, 66, 0.35);
+      transition: 0.5s;
+    }
+
+    .alert-simple.alert-info {
+      border: 1px solid rgba(6, 44, 241, 0.46);
+      background-color: rgba(7, 73, 149, 0.12156862745098039);
+      box-shadow: 0px 0px 2px #0396ff;
+      color: #0396ff;
+      text-shadow: 2px 1px #00040a;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    .alert-info:hover {
+      background-color: rgba(7, 73, 149, 0.35);
+      transition: 0.5s;
+    }
+
+    .blue-cross {
+      font-size: 18px;
+      color: #0bd2ff;
+      text-shadow: none;
+    }
+
+    .alert-simple.alert-warning {
+      border: 1px solid rgba(241, 142, 6, 0.81);
+      background-color: rgba(220, 128, 1, 0.16);
+      box-shadow: 0px 0px 2px #ffb103;
+      color: #ffb103;
+      text-shadow: 2px 1px #00040a;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    .alert-warning:hover {
+      background-color: rgba(220, 128, 1, 0.33);
+      transition: 0.5s;
+    }
+
+    .warning {
+      font-size: 18px;
+      color: #ffb40b;
+      text-shadow: none;
+    }
+
+    .alert-simple.alert-danger {
+      border: 1px solid rgba(241, 6, 6, 0.81);
+      background-color: rgba(220, 17, 1, 0.16);
+      box-shadow: 0px 0px 2px #ff0303;
+      color: #ff0303;
+      text-shadow: 2px 1px #00040a;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    .alert-danger:hover {
+      background-color: rgba(220, 17, 1, 0.33);
+      transition: 0.5s;
+    }
+
+    .danger {
+      font-size: 18px;
+      color: #ff0303;
+      text-shadow: none;
+    }
+
+    .alert-simple.alert-primary {
+      border: 1px solid rgba(6, 241, 226, 0.81);
+      background-color: rgba(1, 204, 220, 0.16);
+      box-shadow: 0px 0px 2px #03fff5;
+      color: #03d0ff;
+      text-shadow: 2px 1px #00040a;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    .alert-primary:hover {
+      background-color: rgba(1, 204, 220, 0.33);
+      transition: 0.5s;
+    }
+
+    .alertprimary {
+      font-size: 18px;
+      color: #03d0ff;
+      text-shadow: none;
+    }
+
+    .square_box {
+      position: absolute;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      border-top-left-radius: 45px;
+      opacity: 0.302;
+    }
+
+    .square_box.box_three {
+      background-image: -moz-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
+      background-image: -webkit-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
+      background-image: -ms-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
+      opacity: 0.059;
+      left: -80px;
+      top: -60px;
+      width: 500px;
+      height: 500px;
+      border-radius: 45px;
+    }
+
+    .square_box.box_four {
+      background-image: -moz-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
+      background-image: -webkit-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
+      background-image: -ms-linear-gradient(-90deg, #290a59 0%, #3d57f4 100%);
+      opacity: 0.059;
+      left: 150px;
+      top: -25px;
+      width: 550px;
+      height: 550px;
+      border-radius: 45px;
+    }
+
+    .alert:before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: calc(100% - 44px);
+      border-left: 1px solid;
+      border-right: 2px solid;
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      height: 20px;
+    }
+
+    .fa-times {
+      -webkit-animation: blink-1 2s infinite both;
+      animation: blink-1 2s infinite both;
+    }
+
+
+    /**
+    * ----------------------------------------
+    * animation blink-1
+    * ----------------------------------------
+    */
+    @-webkit-keyframes blink-1 {
+
+      0%,
+      50%,
+      100% {
+        opacity: 1;
+      }
+
+      25%,
+      75% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes blink-1 {
+
+      0%,
+      50%,
+      100% {
+        opacity: 1;
+      }
+
+      25%,
+      75% {
+        opacity: 0;
+      }
+    }
+  </style>
+  <style>
+    .alert.alert-success {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background-color: rgba(172, 255, 47, 0.784);
+      color: black;
+      box-shadow: 1px 5px 17px -3px #000;
+    }
+  </style>
+
+
+  <div ng-view="">
+
+  </div>
+  <footer>
+    <div class="container-fluid container-xxl container-xl container-lg container-md container-sm container  pt-4">
+      <div class="row">
+        <div class="col-lg-9 col-md-12 ">
+          <div class="row">
+            <div class="col-3">
+              <h4 class="title-menu">VỀ CHÚNG TÔI</h4>
+              <div class="list-ul">
+                <ul class="list-group">
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Giới Thiệu
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Sản phẩm
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Tin tức
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Liên hệ
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3">
+              <h4 class="title-menu">VỀ CHÚNG TÔI</h4>
+              <div class="list-ul">
+                <ul class="list-group">
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3">
+              <h4 class="title-menu">VỀ CHÚNG TÔI</h4>
+              <div class="list-ul">
+                <ul class="list-group">
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3">
+              <h4 class="title-menu">VỀ CHÚNG TÔI</h4>
+              <div class="list-ul">
+                <ul class="list-group">
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                  <li class="li_menu ps-0"><a class="nav-link" href="">
+                      Trang chủ
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <h4 class="title-menu">ĐĂNG KÍ NHẬN THÔNG TIN</h4>
+          <div class="list-ul">
+            <ul class="list-group">
+              <li class="li_menu ps-0"><a class="nav-link" href="">
+                  Đăng ký nhận thông tin ưu đãi cùng với khuyến mãi khủng từ Big Food
+                </a></li>
+              <li class="li_menu ps-0"><a class="nav-link" href="">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Email" id="email" aria-label="mail" aria-describedby="basic-addon1">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                  </div>
+                </a></li>
+              <li class="li_menu ps-0"><a class="nav-link" href="">
+                  <div class="row row-cols-auto">
+                    <div class="col"><i class="fa-brands fa-facebook"></i></div>
+                    <div class="col"><i class="fa-brands fa-tiktok"></i></div>
+                    <div class="col"><i class="fa-brands fa-google"></i></div>
+                    <div class="col"><i class="fa-brands fa-twitter"></i></div>
+                  </div>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="center text-center mt-5 pb-4">
+        <h5>CỬA HÀNG BÁNH NGỌT</h5>
+        <p class=" mt-3 mb-1">Big Food:Tầng 6, 266 Đội Cấn, Hà Nội,</p>
+        <p class="">Điện thoại: 1900 6750 Email: support@sapo.vn</p>
+      </div>
+      <div class="row mt-5">
+        <div class="col-6">© Bản quyền thuộc về Avent Team | Cung cấp bởi Sapo</div>
+        <div class="col-6 d-flex flex-row-reverse pb-4">
+          <img src="images/payment.webp" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/c44613d061.js" crossorigin="anonymous"></script>
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="angular.min.js"></script>
+  <script src="angular-route.min.js"></script>
+  <script src="app.js"></script>
+  <script src="controller/main.js"></script>
+  <script src="controller/home.js"></script>
+  <script src="controller/product.js"></script>
+  <script src="controller/detail.js"></script>
+  <script src="controller/register.js"></script>
+  <script src="controller/login.js"></script>
+  <script src="controller/adminCtrl.js"></script>
+  <script src="controller/cartCtrl.js"></script>
+  <script src="controller/adminProductCtrl.js"></script>
+</body>
+
+</html>
+<style>
+  .dong {
+    display: none;
+  }
+
+  .dong1 {
+    display: none;
+  }
+</style>
+<script>
+  const dropdownMenu2 = document.getElementById("menumo");
+  const dropdownMenu = document.getElementById("menumo2");
+  const mo = document.querySelector(".mo");
+  const dong = document.querySelector(".dong");
+  const mo1 = document.querySelector(".mo1");
+  const dong1 = document.querySelector(".dong1");
+
+
+  console.log(dropdownMenu2);
+
+  function btmo() {
+    dropdownMenu2.style.display = "block";
+    dropdownMenu.style.display = "block";
+    dong.style.display = "block";
+    mo.style.display = "none";
+  }
+
+  function btdong() {
+    dropdownMenu2.style.display = "none";
+    dropdownMenu.style.display = "block";
+    dong.style.display = "none";
+    mo.style.display = "block";
+  }
+
+  function btmo2() {
+    dropdownMenu.style.display = "block";
+    dong1.style.display = "block";
+    mo1.style.display = "none";
+  }
+
+  function btdong2() {
+    dropdownMenu.style.display = "none";
+    dong1.style.display = "none";
+    mo1.style.display = "block";
+  }
+</script>
+<style>
+  .ul-list {
+    display: flex;
+    gap: 20px;
+    color: #c69c6d;
+    padding: 18px;
+  }
+
+  .btn-group>.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 5.5em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+  }
+
+  .btn-insert {
+    background-color: #00000000;
+    padding: 5px 10px;
+    border: 1px solid #603913;
+    color: #000;
+    font-size: 13px;
+  }
+
+  .btn-group:hover .btn-insert {
+    background-color: #C69C6B;
+    color: #fff;
+    transition: ease 0.5s;
+
+  }
+
+  .card-title-sp {
+    font-size: 14px;
+  }
+
+  .center-row {
+    align-items: center;
+  }
+
+  .col-4>img {
+    width: 100%;
+  }
+
+  footer {
+    background-color: #f8f1e4;
+  }
+
+  .title-menu {
+    margin: 0;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #603913;
+    position: relative;
+  }
+
+  .li_menu {
+    list-style: none;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  #mail {
+    padding: 0 50px 0 20px;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    color: #c69c6d;
+    font-weight: 300;
+    border: 1px solid #fff;
+    background: #fff;
+  }
+
+  #subscribe {
+    cursor: pointer;
+    position: absolute;
+    bottom: 11px;
+    padding: 8px 20px;
+    right: 0;
+    background: #fff;
+    color: #333;
+    border: 0;
+    outline: 0;
+  }
+
+  .content-main {
+    background-image: url(images/sub-banner-top.webp);
+    background-size: cover;
+    padding: 90px 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .title_full {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .title_full .title_page {
+    color: #fff;
+    margin: 0;
+    text-transform: unset;
+    text-align: center;
+    font-size: 60px;
+    line-height: normal;
+    font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+  }
+
+  .aside-title {
+    position: relative;
+    background-image: url(images/bg-title.webp);
+    margin-bottom: 30px;
+  }
+
+  .aside-title h2 {
+    width: 100%;
+    font-family: "Roboto Slab", "HelveticaNeue", "Helvetica Neue", sans-serif;
+    margin: 0;
+    text-transform: none;
+    font-weight: 4;
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+    color: #c69c6d;
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  .aside-title h2 span {
+    color: #fff;
+  }
+
+  #dropdownMenu2 {
+    display: none;
+  }
+
+  .tru {
+    display: none;
+  }
+
+  .cong,
+  .tru {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .nav_pagi .pagination .page-item.active .page-link {
+    background-color: #c69c6d;
+    border-color: #c69c6d;
+    color: #fff;
+    display: block;
+  }
+
+  .nav_pagi .pagination .page-link {
+    float: left;
+    margin: 0 2.5px;
+    border-radius: 0;
+    width: 40px;
+    background: #fff;
+    text-align: center;
+    height: 40px;
+    font-size: 14px;
+    padding: 0;
+    line-height: 40px;
+    color: #c69c6d;
+    border: solid 1px #c69c6d;
+    text-decoration: none;
+  }
+
+  .nav_pagi .pagination .page-link:hover {
+    background-color: #c69c6d;
+    border-color: #c69c6d;
+    color: #fff;
+  }
+</style>
+<style>
+  .dong {
+    display: none;
+  }
+
+  .dong1 {
+    display: none;
+  }
+
+  .title-head-contact {
+    color: #c69c6d;
+    font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+
+  .page_cotact .text_des {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    margin: 20px 0;
+    color: #252525;
+  }
+
+  .contact-right .content-contact {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 100%;
+    float: left;
+  }
+
+  .contact-right .content-contact a,
+  .contact-right .content-contact span {
+    width: calc(100% - 28px);
+    padding-left: 10px;
+    float: left;
+    line-height: 28px;
+  }
+
+  .content-contact a {
+    color: #603913;
+    text-decoration: none;
+    background: transparent;
+
+  }
+
+  .contact-right .content-contact span {
+    width: calc(100% - 28px);
+    padding-left: 10px;
+    float: left;
+    line-height: 28px;
+  }
+
+  .content-contact i {
+    float: left;
+    border: 1px solid #c69c6d;
+    text-align: center;
+    color: #c69c6d;
+    font-size: 13px;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+  }
+
+  .btn-lienhe {
+    padding: 5px 25px;
+    background: #c69c6d;
+    color: #fff;
+    border-radius: 0;
+    font-size: 14px;
+    font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
+    border: 1px solid transparent;
+  }
+</style>
+<script>
+  function btmo() {
+    dropdownMenu2.style.display = "block";
+    dropdownMenu.style.display = "block";
+    dong.style.display = "block";
+    mo.style.display = "none";
+  }
+
+  function btdong() {
+    dropdownMenu2.style.display = "none";
+    dropdownMenu.style.display = "block";
+    dong.style.display = "none";
+    mo.style.display = "block";
+  }
+
+  function btmo2() {
+    dropdownMenu.style.display = "block";
+    dong1.style.display = "block";
+    mo1.style.display = "none";
+  }
+
+  function btdong2() {
+    dropdownMenu.style.display = "none";
+    dong1.style.display = "none";
+    mo1.style.display = "block";
+  }
+</script>
+<script>
+  const tru = document.querySelector(".tru");
+  const cong = document.querySelector(".cong");
+
+  console.log(dropdownMenu2);
+
+  function tocong() {
+    dropdownMenu2.style.display = "block";
+    tru.style.display = "block";
+    cong.style.display = "none";
+  }
+
+  function totru() {
+    dropdownMenu2.style.display = "none";
+    tru.style.display = "none";
+    cong.style.display = "block";
+  }
+</script>
+<style>
+  .ul-list {
+    display: flex;
+    gap: 20px;
+    color: #c69c6d;
+    padding: 18px;
+  }
+
+  .time_post {
+    font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    display: block;
+    color: #c69c6d;
+    font-weight: 300;
+  }
+
+  .time_post span {
+    margin-right: 20px;
+  }
+
+  .social-sharing a {
+    font-size: 14px;
+    color: #c69c6d;
+    padding-left: 15px;
+  }
+
+  .news {
+    padding-right: 80px;
+  }
+
+  .title-news>a>.title-head {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .content-news {
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+  a {
+    color: #c69c6d;
+  }
+
+  .btn-group>.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 5.5em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+  }
+
+  .btn-insert {
+    background-color: #00000000;
+    padding: 5px 10px;
+    border: 1px solid #603913;
+    color: #000;
+    font-size: 13px;
+  }
+
+  .btn-group:hover .btn-insert {
+    background-color: #C69C6B;
+    color: #fff;
+    transition: ease 0.5s;
+
+  }
+
+  .card-title-sp {
+    font-size: 14px;
+  }
+
+  .center-row {
+    align-items: center;
+  }
+
+  .col-4>img {
+    width: 100%;
+  }
+
+  footer {
+    background-color: #f8f1e4;
+  }
+
+  .title-menu {
+    margin: 0;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #603913;
+    position: relative;
+  }
+
+  .li_menu {
+    list-style: none;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  #mail {
+    padding: 0 50px 0 20px;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    color: #c69c6d;
+    font-weight: 300;
+    border: 1px solid #fff;
+    background: #fff;
+  }
+
+  #subscribe {
+    cursor: pointer;
+    position: absolute;
+    bottom: 11px;
+    padding: 8px 20px;
+    right: 0;
+    background: #fff;
+    color: #333;
+    border: 0;
+    outline: 0;
+  }
+
+  .quanlity {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .quanlity-input {
+    margin: 0px 10px;
+    display: block;
+    float: left;
+    color: #8d90a6;
+    height: 40px;
+    border: 1px solid #c69c6d;
+    width: 80px;
+    text-align: center;
+    box-shadow: none;
+    border-radius: 0px;
+    font-size: 14px;
+    font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
+    background: #fff;
+    padding: 0;
+    outline: none;
+  }
+
+  .icon-quanlity {
+    font-size: 14px;
+    line-height: 0px;
+    border: solid 1px #c69c6d;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    cursor: pointer;
+    color: #333;
+    text-align: center;
+    padding: 0px;
+    -webkit-transition: background-color ease-in-out 0.3s;
+    -moz-transition: background-color ease-in-out 0.3s;
+    -ms-transition: background-color ease-in-out 0.3s;
+    -o-transition: background-color ease-in-out 0.3s;
+    transition: background-color ease-in-out 0.3s;
+  }
+
+  .content-main {
+    background-image: url(images/sub-banner-top.webp);
+    background-size: cover;
+    padding: 90px 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .title_full {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .title_full .title_page {
+    color: #fff;
+    margin: 0;
+    text-transform: unset;
+    text-align: center;
+    font-size: 60px;
+    line-height: normal;
+    font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+  }
+
+  .aside-title {
+    position: relative;
+    background-image: url(images/bg-title.webp);
+    margin-bottom: 30px;
+  }
+
+  .aside-title h2 {
+    width: 100%;
+    font-family: "Roboto Slab", "HelveticaNeue", "Helvetica Neue", sans-serif;
+    margin: 0;
+    text-transform: none;
+    font-weight: 4;
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+    color: #c69c6d;
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  .aside-title h2 span {
+    color: #fff;
+  }
+
+  #dropdownMenu2 {
+    display: none;
+  }
+
+  .tru {
+    display: none;
+  }
+
+  .cong,
+  .tru {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .nav_pagi .pagination .page-item.active .page-link {
+    background-color: #c69c6d;
+    border-color: #c69c6d;
+    color: #fff;
+    display: block;
+  }
+
+  .nav_pagi .pagination .page-link {
+    float: left;
+    margin: 0 2.5px;
+    border-radius: 0;
+    width: 40px;
+    background: #fff;
+    text-align: center;
+    height: 40px;
+    font-size: 14px;
+    padding: 0;
+    line-height: 40px;
+    color: #c69c6d;
+    border: solid 1px #c69c6d;
+    text-decoration: none;
+  }
+
+  .nav_pagi .pagination .page-link:hover {
+    background-color: #c69c6d;
+    border-color: #c69c6d;
+    color: #fff;
+  }
+</style>
+<style>
+  .dong {
+    display: none;
+  }
+
+  .dong1 {
+    display: none;
+  }
+</style>
+<script>
+  const dropdownMenu1 = document.getElementById("menumo");
+  console.log(dropdownMenu1);
+
+  function btmo() {
+    dropdownMenu1.style.display = "block";
+    dong.style.display = "block";
+    mo.style.display = "none";
+  }
+
+  function btdong() {
+    dropdownMenu1.style.display = "none";
+    dong.style.display = "none";
+    mo.style.display = "block";
+  }
+</script>

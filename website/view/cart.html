@@ -1,0 +1,183 @@
+  <section class="content-main">
+    <div class="title_full">
+      <div class="container a-center">
+        <h1 class="title_page">Tất cả sản phẩm</h1>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <ul class="ul-list">
+      <li class="list-group-item"><a class="nav-link" href="#">Trang chủ</a></li> /
+      <li class="list-group-item"><a class="nav-link" href="#">Giỏ hàng</a></li>
+    </ul>
+    <hr>
+  </div>
+  <div class="container">
+    <table class="table table-css table-bordered table-responsive-lg table-responsive-md table-responsive-sm table-responsive hidden-md">
+      <thead>
+        <tr class="text-center align-middle p-4">
+          <th class="p-4 text-bg-tb" scope="col">Ảnh sản phẩm</th>
+          <th class="p-4 text-bg-tb" scope="col">Tên sản phẩm</th>
+          <th class="p-4 text-bg-tb" scope="col">Đơn giá</th>
+          <th class="p-4 text-bg-tb" scope="col">Số lượng</th>
+          <th class="p-4 text-bg-tb" scope="col">Thành tiền</th>
+          <th class="p-4 text-bg-tb" scope="col">Xóa</th>
+        </tr>
+      </thead>
+      <tbody class="text-center align-middle">
+        <tr ng-repeat="sp in cart">
+
+          <td style="width: 17%;" class="p-4 pb-1">
+            <img class="img-fluid" src="{{sp.image}}" alt="">
+          </td>
+          <td>{{sp.name}}</td>
+          <td>
+            <span class="cart-price">{{sp.price | currency:"":0}}đ</span>
+          </td>
+          <td style="width: 14%;">
+            <div class="quantity-cart">
+              <button class="quantity-cart-bt"><i class="fa-solid fa-minus text-center"></i></button>
+              <input type="text" maxlength="3" min="1" max="100" value="1" ng-model="sp.quantity" ng-change="saveCart()" class="quantity-cart-input" pattern="[0-9]*">
+              <button class="quantity-cart-bt"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </td>
+          <td>
+            <span class="cart-price">{{sp.quantity* sp.price | number:0}}đ</span>
+          </td>
+          <td style="width: 6%;">
+            <button ng-click="deleteCart($index)" class="btn btn-info"> <i class="fa-solid fa-trash"></i></button>
+
+          </td>
+        </tr>
+        <tr>
+
+          <td colspan="3">Tổng tiền</td>
+          <td><span class="cart-price">{{tinhTong() | number:0}}đ</span></td>
+          <td>
+            <button ng-click="deleteCartAll()" class="btn btn-info"> Xóa hết</button>
+
+          </td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <div class="td-flex">
+              <button class="continue-buy" type="button">Tiếp tục mua hàng</button>
+              <button class="next-to-payment" data-bs-toggle="modal" data-bs-target="#exampleModal">Tiến hành thanh toán</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="row hidden-lg">
+      <div class="col-6">
+        <div class="row">
+          <div class="col-6">
+            <img class="img-fluid" src="images/pr1.png" alt="">
+          </div>
+          <div class="col-6">
+            <div class="row">
+              Bánh mứt kem dừa
+            </div>
+            <div class="row">
+              <div class="quantity-cart">
+                <button class="quantity-cart-bt"><i class="fa-solid fa-minus text-center"></i></button>
+                <input type="text" maxlength="3" min="1" max="100" value="1" class="quantity-cart-input" pattern="[0-9]*">
+                <button class="quantity-cart-bt"><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 text-end">
+        <div class="row"><span class="cart-price">60.000₫</span></div>
+        <div class="row"><i class="fa-solid fa-trash"></i></div>
+      </div>
+    </div>
+    <div class="row hidden-lg">
+      <div class="col-6">
+        <div class="row">
+          <div class="col-6">
+            <img class="img-fluid" src="images/pr1.png" alt="">
+          </div>
+          <div class="col-6">
+            <div class="row">
+              Bánh mứt kem dừa
+            </div>
+            <div class="row">
+              <div class="quantity-cart">
+                <button class="quantity-cart-bt"><i class="fa-solid fa-minus text-center"></i></button>
+                <input type="text" maxlength="3" min="1" max="100" value="1" class="quantity-cart-input" pattern="[0-9]*">
+                <button class="quantity-cart-bt"><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 text-end">
+        <div class="row"><span class="cart-price">60.000₫</span></div>
+        <div class="row"><i class="fa-solid fa-trash"></i></div>
+      </div>
+    </div>
+    <div class="row hidden-lg">
+      <div class="col-6">
+        <div class="row">
+          <div class="col-6">
+            <img class="img-fluid" src="images/pr1.png" alt="">
+          </div>
+          <div class="col-6">
+            <div class="row">
+              Bánh mứt kem dừa
+            </div>
+            <div class="row">
+              <div class="quantity-cart">
+                <button class="quantity-cart-bt"><i class="fa-solid fa-minus text-center"></i></button>
+                <input type="text" maxlength="3" min="1" max="100" value="1" class="quantity-cart-input" pattern="[0-9]*">
+                <button class="quantity-cart-bt"><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 text-end">
+        <div class="row"><span class="cart-price">60.000₫</span></div>
+        <div class="row"><i class="fa-solid fa-trash"></i></div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary">
+    Launch demo modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Thông tin giao hàng</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Họ tên</label>
+              <input type="text" class="form-control" id="name" ng-model="name">
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Số điện thoại</label>
+              <input type="text" class="form-control" id="phone" ng-model="phone">
+            </div>
+            <div class="mb-3">
+              <label for="address" class="form-label">Địa chỉ</label>
+              <input type="text" class="form-control" id="address" ng-model="address">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kiểm tra lại</button>
+          <button type="button" class="btn btn-success" ng-click="checkOut()">Xác nhận</button>
+        </div>
+      </div>
+    </div>
+  </div>
